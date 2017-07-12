@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABED1BAF1F16607600E9F9AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BAE1F16607600E9F9AC /* main.m */; };
+		ABED1BB21F16607600E9F9AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BB11F16607600E9F9AC /* AppDelegate.m */; };
+		ABED1BB51F16607600E9F9AC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BB41F16607600E9F9AC /* FirstViewController.m */; };
+		ABED1BB81F16607600E9F9AC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BB71F16607600E9F9AC /* SecondViewController.m */; };
+		ABED1BBB1F16607600E9F9AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABED1BB91F16607600E9F9AC /* Main.storyboard */; };
+		ABED1BBD1F16607600E9F9AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABED1BBC1F16607600E9F9AC /* Assets.xcassets */; };
+		ABED1BC01F16607600E9F9AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABED1BBE1F16607600E9F9AC /* LaunchScreen.storyboard */; };
+		ABED1BCB1F16607600E9F9AC /* GandalfAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BCA1F16607600E9F9AC /* GandalfAppTests.m */; };
+		ABED1BD61F16607700E9F9AC /* GandalfAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BD51F16607700E9F9AC /* GandalfAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABED1BC71F16607600E9F9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABED1BA21F16607600E9F9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABED1BA91F16607600E9F9AC;
+			remoteInfo = GandalfApp;
+		};
+		ABED1BD21F16607700E9F9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABED1BA21F16607600E9F9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABED1BA91F16607600E9F9AC;
+			remoteInfo = GandalfApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABED1BAA1F16607600E9F9AC /* GandalfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GandalfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABED1BAE1F16607600E9F9AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABED1BB01F16607600E9F9AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABED1BB11F16607600E9F9AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABED1BB31F16607600E9F9AC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		ABED1BB41F16607600E9F9AC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		ABED1BB61F16607600E9F9AC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		ABED1BB71F16607600E9F9AC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		ABED1BBA1F16607600E9F9AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABED1BBC1F16607600E9F9AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABED1BBF1F16607600E9F9AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABED1BC11F16607600E9F9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABED1BC61F16607600E9F9AC /* GandalfAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GandalfAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABED1BCA1F16607600E9F9AC /* GandalfAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GandalfAppTests.m; sourceTree = "<group>"; };
+		ABED1BCC1F16607700E9F9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABED1BD11F16607700E9F9AC /* GandalfAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GandalfAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABED1BD51F16607700E9F9AC /* GandalfAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GandalfAppUITests.m; sourceTree = "<group>"; };
+		ABED1BD71F16607700E9F9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABED1BA71F16607600E9F9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABED1BC31F16607600E9F9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABED1BCE1F16607700E9F9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABED1BA11F16607600E9F9AC = {
+			isa = PBXGroup;
+			children = (
+				ABED1BAC1F16607600E9F9AC /* GandalfApp */,
+				ABED1BC91F16607600E9F9AC /* GandalfAppTests */,
+				ABED1BD41F16607700E9F9AC /* GandalfAppUITests */,
+				ABED1BAB1F16607600E9F9AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABED1BAB1F16607600E9F9AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABED1BAA1F16607600E9F9AC /* GandalfApp.app */,
+				ABED1BC61F16607600E9F9AC /* GandalfAppTests.xctest */,
+				ABED1BD11F16607700E9F9AC /* GandalfAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABED1BAC1F16607600E9F9AC /* GandalfApp */ = {
+			isa = PBXGroup;
+			children = (
+				ABED1BB01F16607600E9F9AC /* AppDelegate.h */,
+				ABED1BB11F16607600E9F9AC /* AppDelegate.m */,
+				ABED1BB31F16607600E9F9AC /* FirstViewController.h */,
+				ABED1BB41F16607600E9F9AC /* FirstViewController.m */,
+				ABED1BB61F16607600E9F9AC /* SecondViewController.h */,
+				ABED1BB71F16607600E9F9AC /* SecondViewController.m */,
+				ABED1BB91F16607600E9F9AC /* Main.storyboard */,
+				ABED1BBC1F16607600E9F9AC /* Assets.xcassets */,
+				ABED1BBE1F16607600E9F9AC /* LaunchScreen.storyboard */,
+				ABED1BC11F16607600E9F9AC /* Info.plist */,
+				ABED1BAD1F16607600E9F9AC /* Supporting Files */,
+			);
+			path = GandalfApp;
+			sourceTree = "<group>";
+		};
+		ABED1BAD1F16607600E9F9AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABED1BAE1F16607600E9F9AC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABED1BC91F16607600E9F9AC /* GandalfAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABED1BCA1F16607600E9F9AC /* GandalfAppTests.m */,
+				ABED1BCC1F16607700E9F9AC /* Info.plist */,
+			);
+			path = GandalfAppTests;
+			sourceTree = "<group>";
+		};
+		ABED1BD41F16607700E9F9AC /* GandalfAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABED1BD51F16607700E9F9AC /* GandalfAppUITests.m */,
+				ABED1BD71F16607700E9F9AC /* Info.plist */,
+			);
+			path = GandalfAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABED1BA91F16607600E9F9AC /* GandalfApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABED1BDA1F16607700E9F9AC /* Build configuration list for PBXNativeTarget "GandalfApp" */;
+			buildPhases = (
+				ABED1BA61F16607600E9F9AC /* Sources */,
+				ABED1BA71F16607600E9F9AC /* Frameworks */,
+				ABED1BA81F16607600E9F9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GandalfApp;
+			productName = GandalfApp;
+			productReference = ABED1BAA1F16607600E9F9AC /* GandalfApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABED1BC51F16607600E9F9AC /* GandalfAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABED1BDD1F16607700E9F9AC /* Build configuration list for PBXNativeTarget "GandalfAppTests" */;
+			buildPhases = (
+				ABED1BC21F16607600E9F9AC /* Sources */,
+				ABED1BC31F16607600E9F9AC /* Frameworks */,
+				ABED1BC41F16607600E9F9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABED1BC81F16607600E9F9AC /* PBXTargetDependency */,
+			);
+			name = GandalfAppTests;
+			productName = GandalfAppTests;
+			productReference = ABED1BC61F16607600E9F9AC /* GandalfAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABED1BD01F16607700E9F9AC /* GandalfAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABED1BE01F16607700E9F9AC /* Build configuration list for PBXNativeTarget "GandalfAppUITests" */;
+			buildPhases = (
+				ABED1BCD1F16607700E9F9AC /* Sources */,
+				ABED1BCE1F16607700E9F9AC /* Frameworks */,
+				ABED1BCF1F16607700E9F9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABED1BD31F16607700E9F9AC /* PBXTargetDependency */,
+			);
+			name = GandalfAppUITests;
+			productName = GandalfAppUITests;
+			productReference = ABED1BD11F16607700E9F9AC /* GandalfAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABED1BA21F16607600E9F9AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Gandalf;
+				TargetAttributes = {
+					ABED1BA91F16607600E9F9AC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VLR35R7TBV;
+						ProvisioningStyle = Automatic;
+					};
+					ABED1BC51F16607600E9F9AC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VLR35R7TBV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ABED1BA91F16607600E9F9AC;
+					};
+					ABED1BD01F16607700E9F9AC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VLR35R7TBV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ABED1BA91F16607600E9F9AC;
+					};
+				};
+			};
+			buildConfigurationList = ABED1BA51F16607600E9F9AC /* Build configuration list for PBXProject "GandalfApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABED1BA11F16607600E9F9AC;
+			productRefGroup = ABED1BAB1F16607600E9F9AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABED1BA91F16607600E9F9AC /* GandalfApp */,
+				ABED1BC51F16607600E9F9AC /* GandalfAppTests */,
+				ABED1BD01F16607700E9F9AC /* GandalfAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABED1BA81F16607600E9F9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABED1BC01F16607600E9F9AC /* LaunchScreen.storyboard in Resources */,
+				ABED1BBD1F16607600E9F9AC /* Assets.xcassets in Resources */,
+				ABED1BBB1F16607600E9F9AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABED1BC41F16607600E9F9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABED1BCF1F16607700E9F9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABED1BA61F16607600E9F9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABED1BB81F16607600E9F9AC /* SecondViewController.m in Sources */,
+				ABED1BB21F16607600E9F9AC /* AppDelegate.m in Sources */,
+				ABED1BB51F16607600E9F9AC /* FirstViewController.m in Sources */,
+				ABED1BAF1F16607600E9F9AC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABED1BC21F16607600E9F9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABED1BCB1F16607600E9F9AC /* GandalfAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABED1BCD1F16607700E9F9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABED1BD61F16607700E9F9AC /* GandalfAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABED1BC81F16607600E9F9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABED1BA91F16607600E9F9AC /* GandalfApp */;
+			targetProxy = ABED1BC71F16607600E9F9AC /* PBXContainerItemProxy */;
+		};
+		ABED1BD31F16607700E9F9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABED1BA91F16607600E9F9AC /* GandalfApp */;
+			targetProxy = ABED1BD21F16607700E9F9AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABED1BB91F16607600E9F9AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABED1BBA1F16607600E9F9AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABED1BBE1F16607600E9F9AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABED1BBF1F16607600E9F9AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABED1BD81F16607700E9F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABED1BD91F16607700E9F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABED1BDB1F16607700E9F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLR35R7TBV;
+				INFOPLIST_FILE = GandalfApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdndevs.GandalfApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ABED1BDC1F16607700E9F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLR35R7TBV;
+				INFOPLIST_FILE = GandalfApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdndevs.GandalfApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ABED1BDE1F16607700E9F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VLR35R7TBV;
+				INFOPLIST_FILE = GandalfAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdndevs.GandalfAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GandalfApp.app/GandalfApp";
+			};
+			name = Debug;
+		};
+		ABED1BDF1F16607700E9F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VLR35R7TBV;
+				INFOPLIST_FILE = GandalfAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdndevs.GandalfAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GandalfApp.app/GandalfApp";
+			};
+			name = Release;
+		};
+		ABED1BE11F16607700E9F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VLR35R7TBV;
+				INFOPLIST_FILE = GandalfAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdndevs.GandalfAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GandalfApp;
+			};
+			name = Debug;
+		};
+		ABED1BE21F16607700E9F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VLR35R7TBV;
+				INFOPLIST_FILE = GandalfAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdndevs.GandalfAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GandalfApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABED1BA51F16607600E9F9AC /* Build configuration list for PBXProject "GandalfApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABED1BD81F16607700E9F9AC /* Debug */,
+				ABED1BD91F16607700E9F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABED1BDA1F16607700E9F9AC /* Build configuration list for PBXNativeTarget "GandalfApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABED1BDB1F16607700E9F9AC /* Debug */,
+				ABED1BDC1F16607700E9F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABED1BDD1F16607700E9F9AC /* Build configuration list for PBXNativeTarget "GandalfAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABED1BDE1F16607700E9F9AC /* Debug */,
+				ABED1BDF1F16607700E9F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABED1BE01F16607700E9F9AC /* Build configuration list for PBXNativeTarget "GandalfAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABED1BE11F16607700E9F9AC /* Debug */,
+				ABED1BE21F16607700E9F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABED1BA21F16607600E9F9AC /* Project object */;
+}
