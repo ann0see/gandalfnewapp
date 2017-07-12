@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		bYU8cWq/7uUPFyW6VXDpyOEa7LA=
+		zpAsfwcEa1rXSBwqkVKH6v++O58=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
-		2wIloV76glhmvJlUnZzn/BF9XE0=
+		R3kjWtb5YbrBi/DEnqBdDnOwLFo=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
 		<data>
@@ -198,7 +198,7 @@
 		</data>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<data>
-		lDWiq7SajsM30NxC1DpnKGv6IGU=
+		GTlIsnte6KR8M7l1NIFCt1gFIjs=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/Info.plist</key>
 		<data>
@@ -267,7 +267,7 @@
 		</data>
 		<key>PlugIns/GandalfAppTests.xctest/GandalfAppTests</key>
 		<data>
-		Helx3ivZB+qNcqHDKc+c69dinu0=
+		2QYdJ2g9LTVHXBZ+GMBYQ9hXdSE=
 		</data>
 		<key>PlugIns/GandalfAppTests.xctest/Info.plist</key>
 		<data>
@@ -288,11 +288,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bYU8cWq/7uUPFyW6VXDpyOEa7LA=
+			zpAsfwcEa1rXSBwqkVKH6v++O58=
 			</data>
 			<key>hash2</key>
 			<data>
-			hOcFVgu8+VCU9TAXTNKt2nzZiTmvuWzBe+qE7tPVpMg=
+			88dKO7TMAAgZm6ubusE7UM8qPfBL6YL4cbBcjRWSjno=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -376,11 +376,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2wIloV76glhmvJlUnZzn/BF9XE0=
+			R3kjWtb5YbrBi/DEnqBdDnOwLFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			IQtG+ElOb+reOrszhgObOwPtnofekAGDpNEUx7aAi3g=
+			ak4DyymzOt0q7ZAZ9kHfJlsAaSn+KAYE1kkxtIBVIdU=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
@@ -816,11 +816,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lDWiq7SajsM30NxC1DpnKGv6IGU=
+			GTlIsnte6KR8M7l1NIFCt1gFIjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			c3ni3lRWdkx8tXAXu6wZb4grThFTCSrlMACGbd6IS7E=
+			/QRGmSdM30xkD3X/F3pwyUpuD4Y4iNq6h2Tbu7Gwnks=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/Info.plist</key>
@@ -972,11 +972,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Helx3ivZB+qNcqHDKc+c69dinu0=
+			2QYdJ2g9LTVHXBZ+GMBYQ9hXdSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			U/+55VsVZnSajdbqDU6QhQgKSGikohp0LMSCuSOmQhc=
+			smrSnZ1rr1Uap7r+EAFskiwn1fR/k9Md1Xuz9ZKs8A8=
 			</data>
 		</dict>
 		<key>PlugIns/GandalfAppTests.xctest/Info.plist</key>
