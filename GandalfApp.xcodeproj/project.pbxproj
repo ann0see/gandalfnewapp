@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB9400881F16846B00DFBE56 /* prepare.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = prepare.sh; sourceTree = "<group>"; };
 		ABED1BAA1F16607600E9F9AC /* GandalfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GandalfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABED1BAE1F16607600E9F9AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABED1BB01F16607600E9F9AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				ABED1BBE1F16607600E9F9AC /* LaunchScreen.storyboard */,
 				ABED1BC11F16607600E9F9AC /* Info.plist */,
 				ABED1BAD1F16607600E9F9AC /* Supporting Files */,
+				AB9400881F16846B00DFBE56 /* prepare.sh */,
 			);
 			path = GandalfApp;
 			sourceTree = "<group>";
@@ -435,11 +437,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VLR35R7TBV;
 				INFOPLIST_FILE = GandalfApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gdndevs.GandalfApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -447,11 +452,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VLR35R7TBV;
 				INFOPLIST_FILE = GandalfApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gdndevs.GandalfApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -524,6 +532,7 @@
 				ABED1BDC1F16607700E9F9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABED1BDD1F16607700E9F9AC /* Build configuration list for PBXNativeTarget "GandalfAppTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +541,7 @@
 				ABED1BDF1F16607700E9F9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABED1BE01F16607700E9F9AC /* Build configuration list for PBXNativeTarget "GandalfAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +550,7 @@
 				ABED1BE21F16607700E9F9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
