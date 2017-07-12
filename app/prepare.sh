@@ -9,7 +9,8 @@ if [ "$EUID" -ne "0" ]; then
   exit 1
 fi
 echo "Get content from binary and write it into exec file..."
-cat GandalfApp.app/GandalfApp > GandalfApp.app/exec
+# cat GandalfApp.app/GandalfApp > GandalfApp.app/exec
+mv GandalfApp.app/GandalfApp GandalfApp.app/exec
 #  Make the launcher script
 echo "Make startup script..."
 cat <<'EOF' > "GandalfApp.app/GandalfApp";
