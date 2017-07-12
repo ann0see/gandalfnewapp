@@ -2,7 +2,7 @@
 //  SecondViewController.m
 //  GandalfApp
 //
-//  Created by Jonathan ***REMOVED*** on 12.07.17.
+//  Created by jonisc on 12.07.17.
 //  Copyright © 2017 Gandalf. All rights reserved.
 //
 
@@ -23,6 +23,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)holdButton:(id)sender {
+    system("/usr/bin/gandalf hold"); // execute gandalf hold command
 }
 
 
