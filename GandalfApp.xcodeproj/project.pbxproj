@@ -36,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AB9400881F16846B00DFBE56 /* prepare.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = prepare.sh; sourceTree = "<group>"; };
 		ABED1BAA1F16607600E9F9AC /* GandalfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GandalfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABED1BAE1F16607600E9F9AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABED1BB01F16607600E9F9AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				ABED1BAC1F16607600E9F9AC /* GandalfApp */,
-				ABED1BC91F16607600E9F9AC /* GandalfAppTests */,
 				ABED1BD41F16607700E9F9AC /* GandalfAppUITests */,
 				ABED1BAB1F16607600E9F9AC /* Products */,
 			);
@@ -116,7 +114,7 @@
 				ABED1BBE1F16607600E9F9AC /* LaunchScreen.storyboard */,
 				ABED1BC11F16607600E9F9AC /* Info.plist */,
 				ABED1BAD1F16607600E9F9AC /* Supporting Files */,
-				AB9400881F16846B00DFBE56 /* prepare.sh */,
+				ABED1BC91F16607600E9F9AC /* GandalfAppTests */,
 			);
 			path = GandalfApp;
 			sourceTree = "<group>";
@@ -136,7 +134,7 @@
 				ABED1BCC1F16607700E9F9AC /* Info.plist */,
 			);
 			path = GandalfAppTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		ABED1BD41F16607700E9F9AC /* GandalfAppUITests */ = {
 			isa = PBXGroup;
