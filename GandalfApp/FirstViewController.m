@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /*NSString *Link = @"https://ethanrdoesmc.github.io/gandalf";
+    NSURL *url = [NSURL URLWithString:Link];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_firstWebView loadRequest:requestObj];*/ // and the app would crash
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
