@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#include <spawn.h>
 
 @interface SecondViewController : UIViewController
 
