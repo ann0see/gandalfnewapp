@@ -22,7 +22,6 @@
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Not running as root"
             message:@"This app is currently not running as root user. Actions in this view will most likely fail. If you think this is an error, please contact us."
             preferredStyle:UIAlertControllerStyleAlert];
-        
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){}]; // Dismiss button
         UIAlertAction* contactAction = [UIAlertAction actionWithTitle:@"Contact" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
         {
@@ -46,6 +45,12 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)holdButton:(id)sender {
+    if (getuid() != 0) {
+        UIButton *button = (UIButton *)sender;
+        button.enabled = NO;
+        [button setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+        [button setTitle:@"ERROR" forState:UIControlStateNormal];
+    }
     pid_t pid;
     int status;
     const char* args[] = {"gandalf", "hold", NULL};
