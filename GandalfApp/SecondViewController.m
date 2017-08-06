@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 
+
 @interface SecondViewController ()
 
 @end
@@ -25,7 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)holdButton:(id)sender {
-    system("/usr/bin/gandalf hold"); // execute gandalf hold command
+    pid_t pid;
+    int status;
+    const char* args[] = {"gandalf", "hold", NULL};
+    posix_spawn(&pid, "/usr/bin/gandalf", NULL, NULL, (char* const*)args, NULL);
+    waitpid(pid, &status, WEXITED);//wait untill the process completes (only if you need to do that) (yes, we need that)
+    // system("/usr/bin/gandalf hold"); // execute gandalf hold command //is deprecated
 }
 
 
