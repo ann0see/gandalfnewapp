@@ -35,18 +35,29 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kug-VX-gFA">
+                                <rect key="frame" x="20" y="111.66666666666666" width="696" height="251.33333333333334"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aVd-jd-VOM" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="10" id="1zf-uk-QOQ"/>
+                            <constraint firstItem="kug-VX-gFA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="4hb-9x-oCm"/>
                             <constraint firstItem="dpf-GH-mub" firstAttribute="top" secondItem="aVd-jd-VOM" secondAttribute="bottom" constant="7" id="6Ju-jV-iIL"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="kug-VX-gFA" secondAttribute="bottom" constant="2" id="FZr-hE-xvx"/>
+                            <constraint firstItem="kug-VX-gFA" firstAttribute="top" secondItem="dpf-GH-mub" secondAttribute="bottom" constant="2" id="Qd0-gh-aEI"/>
                             <constraint firstAttribute="trailing" secondItem="aVd-jd-VOM" secondAttribute="trailing" constant="10" id="abR-K6-0dS"/>
                             <constraint firstAttribute="trailing" secondItem="dpf-GH-mub" secondAttribute="trailing" constant="10" id="eZK-hP-X8U"/>
                             <constraint firstItem="aVd-jd-VOM" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="4" id="lUP-OU-fWc"/>
                             <constraint firstItem="dpf-GH-mub" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="10" id="rQJ-e3-3xK"/>
+                            <constraint firstItem="kug-VX-gFA" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="uNl-71-cwb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="firstWebView" destination="kug-VX-gFA" id="gtY-Dg-9rx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
