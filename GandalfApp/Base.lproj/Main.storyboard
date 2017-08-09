@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina5_5" orientation="landscape">
+    <device id="retina3_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,39 +19,20 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gandalf" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="46" translatesAutoresizingMaskIntoConstraints="NO" id="aVd-jd-VOM">
-                                <rect key="frame" x="10" y="24" width="716" height="57.666666666666671"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Gandalf" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-GH-mub">
-                                <rect key="frame" x="10" y="88.666666666666671" width="716" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kug-VX-gFA">
-                                <rect key="frame" x="20" y="111.66666666666666" width="696" height="251.33333333333334"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aVd-jd-VOM" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="10" id="1zf-uk-QOQ"/>
-                            <constraint firstItem="kug-VX-gFA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="4hb-9x-oCm"/>
-                            <constraint firstItem="dpf-GH-mub" firstAttribute="top" secondItem="aVd-jd-VOM" secondAttribute="bottom" constant="7" id="6Ju-jV-iIL"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="kug-VX-gFA" secondAttribute="bottom" constant="2" id="FZr-hE-xvx"/>
-                            <constraint firstItem="kug-VX-gFA" firstAttribute="top" secondItem="dpf-GH-mub" secondAttribute="bottom" constant="2" id="Qd0-gh-aEI"/>
-                            <constraint firstAttribute="trailing" secondItem="aVd-jd-VOM" secondAttribute="trailing" constant="10" id="abR-K6-0dS"/>
-                            <constraint firstAttribute="trailing" secondItem="dpf-GH-mub" secondAttribute="trailing" constant="10" id="eZK-hP-X8U"/>
-                            <constraint firstItem="aVd-jd-VOM" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="4" id="lUP-OU-fWc"/>
-                            <constraint firstItem="dpf-GH-mub" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="10" id="rQJ-e3-3xK"/>
-                            <constraint firstItem="kug-VX-gFA" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="uNl-71-cwb"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="kug-VX-gFA" secondAttribute="bottom" id="51T-ns-du2"/>
+                            <constraint firstItem="kug-VX-gFA" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="Lrx-To-nAV"/>
+                            <constraint firstAttribute="trailing" secondItem="kug-VX-gFA" secondAttribute="trailing" id="adA-Tu-MiI"/>
+                            <constraint firstItem="kug-VX-gFA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="wBE-6F-8jx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="first" id="acW-dT-cKf"/>
@@ -61,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="-322.01086956521743"/>
+            <point key="canvasLocation" x="747.5" y="-322.5"/>
         </scene>
         <!--Setup-->
         <scene sceneID="wg7-f3-ORb">
@@ -72,11 +53,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gandalf Maintenance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8g7-At-jYJ">
-                                <rect key="frame" x="10" y="23" width="716" height="34"/>
+                                <rect key="frame" x="10" y="23" width="460" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="oXi-Md-0Ea"/>
                                 </constraints>
@@ -86,7 +67,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rM-US-1Yl">
-                                <rect key="frame" x="301" y="127.66666666666669" width="135" height="159"/>
+                                <rect key="frame" x="173" y="128" width="135" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Hold Gandalf">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -96,7 +77,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hold Gandalf, so that no tweak can remove gandalf automatically." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs2-pH-zJT">
-                                <rect key="frame" x="30" y="67" width="676" height="20.666666666666671"/>
+                                <rect key="frame" x="30" y="67" width="420" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
