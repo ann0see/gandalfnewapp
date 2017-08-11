@@ -82,15 +82,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUZ-tp-hY5">
+                                <rect key="frame" x="20" y="96" width="440" height="30"/>
+                                <state key="normal" title="Check for Updates"/>
+                                <connections>
+                                    <action selector="updateButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cWA-cD-9eo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0rM-US-1Yl" firstAttribute="top" relation="lessThanOrEqual" secondItem="fs2-pH-zJT" secondAttribute="bottom" constant="40" id="6BO-lc-NLA"/>
+                            <constraint firstItem="LUZ-tp-hY5" firstAttribute="top" secondItem="fs2-pH-zJT" secondAttribute="bottom" constant="8" symbolic="YES" id="97R-dz-hhu"/>
                             <constraint firstItem="8g7-At-jYJ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-10" id="Gli-vw-1Ln"/>
                             <constraint firstItem="fs2-pH-zJT" firstAttribute="top" secondItem="8g7-At-jYJ" secondAttribute="bottom" constant="10" id="Iyz-A0-o2z"/>
+                            <constraint firstItem="LUZ-tp-hY5" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="PtM-9g-rwS"/>
                             <constraint firstItem="8g7-At-jYJ" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="R6s-zS-sdl"/>
                             <constraint firstItem="0rM-US-1Yl" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="XHg-0i-Cjx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fs2-pH-zJT" secondAttribute="trailing" constant="10" id="XVZ-0n-t9t"/>
+                            <constraint firstItem="LUZ-tp-hY5" firstAttribute="centerX" secondItem="fs2-pH-zJT" secondAttribute="centerX" id="bee-fX-3vy"/>
                             <constraint firstItem="8g7-At-jYJ" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="3" id="kkc-me-xmz"/>
                             <constraint firstItem="fs2-pH-zJT" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="10" id="lqn-we-KNk"/>
                             <constraint firstItem="8g7-At-jYJ" firstAttribute="centerX" secondItem="0rM-US-1Yl" secondAttribute="centerX" id="yug-zd-f7B"/>
@@ -100,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="358.75"/>
+            <point key="canvasLocation" x="750" y="358.125"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
