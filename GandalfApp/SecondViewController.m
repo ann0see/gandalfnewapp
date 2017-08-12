@@ -228,6 +228,8 @@
         [updateAlert addAction:contactAction];
         [self presentViewController:updateAlert animated:YES completion:nil]; // Show message if update available
     }
+    
+    
 }
 
 
