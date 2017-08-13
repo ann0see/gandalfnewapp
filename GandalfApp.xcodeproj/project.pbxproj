@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5EBA841F3F5A3200241327 /* DDFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5EBA831F3F5A3200241327 /* DDFileReader.m */; };
 		ABED1BAF1F16607600E9F9AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BAE1F16607600E9F9AC /* main.m */; };
 		ABED1BB21F16607600E9F9AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BB11F16607600E9F9AC /* AppDelegate.m */; };
 		ABED1BB51F16607600E9F9AC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BB41F16607600E9F9AC /* FirstViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB5EBA821F3F59B600241327 /* DDFileReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DDFileReader.h; path = ../DDFileReader.h; sourceTree = "<group>"; };
+		AB5EBA831F3F5A3200241327 /* DDFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDFileReader.m; path = ../DDFileReader.m; sourceTree = "<group>"; };
 		ABED1BAA1F16607600E9F9AC /* GandalfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GandalfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABED1BAE1F16607600E9F9AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABED1BB01F16607600E9F9AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 		ABED1BAC1F16607600E9F9AC /* GandalfApp */ = {
 			isa = PBXGroup;
 			children = (
+				AB5EBA821F3F59B600241327 /* DDFileReader.h */,
+				AB5EBA831F3F5A3200241327 /* DDFileReader.m */,
 				ABED1BB01F16607600E9F9AC /* AppDelegate.h */,
 				ABED1BB11F16607600E9F9AC /* AppDelegate.m */,
 				ABED1BB31F16607600E9F9AC /* FirstViewController.h */,
@@ -289,6 +294,7 @@
 				ABED1BB81F16607600E9F9AC /* SecondViewController.m in Sources */,
 				ABED1BB21F16607600E9F9AC /* AppDelegate.m in Sources */,
 				ABED1BB51F16607600E9F9AC /* FirstViewController.m in Sources */,
+				AB5EBA841F3F5A3200241327 /* DDFileReader.m in Sources */,
 				ABED1BAF1F16607600E9F9AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
