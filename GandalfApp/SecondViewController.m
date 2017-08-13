@@ -7,7 +7,6 @@
 //
 
 #import "SecondViewController.h"
-#import "DDFileReader.h"
 @interface SecondViewController ()
 
 
