@@ -11,6 +11,7 @@
 
 @interface FirstViewController : UIViewController
 //@property (weak, nonatomic) IBOutlet UIWebView *firstWebView;
+@property (weak, nonatomic) IBOutlet UILabel *offlineLabel;
 
 
 @end

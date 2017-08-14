@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "Reachability.h"
 @interface SecondViewController ()
 
 
@@ -149,13 +150,12 @@
           // we should check if response was 200 (success)
           packagesFile = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
       }] resume];
-    long double Timeout = 0; //Prevent infinite loops...
-    long double Biggest = 9999999999999999;
-    while ([packagesFile isEqual: @"//EMPTY/"]) {
-        Timeout++;
-        if (Timeout > Biggest){
-            NSLog(@"Hanging!");
+     //Prevent infinite loops...
+
+    for (long double Timeout = 0; Timeout < 9999999999999999; Timeout++) {
+        if (![packagesFile isEqualToString:@"//EMPTY/"]) {
             break;
+        
         }
     } // wait till block is finished
     NSLog(@"Content DL:\n%@", packagesFile);

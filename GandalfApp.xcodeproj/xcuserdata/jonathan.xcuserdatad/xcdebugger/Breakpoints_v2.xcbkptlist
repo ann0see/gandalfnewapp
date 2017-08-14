@@ -73,11 +73,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GandalfApp/SecondViewController.m"
-            timestampString = "524342929.15504"
+            timestampString = "524343920.773387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "-updateButton:"
             landmarkType = "7">
          </BreakpointContent>
