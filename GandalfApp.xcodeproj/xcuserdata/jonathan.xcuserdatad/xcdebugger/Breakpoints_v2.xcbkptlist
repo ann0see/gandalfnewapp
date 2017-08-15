@@ -10,74 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GandalfApp/SecondViewController.m"
-            timestampString = "524491418.346492"
+            timestampString = "524496601.74717"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "-updateButton:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SecondViewController updateButton:]"
-                  moduleName = "GandalfApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathan/Library/Mobile%20Documents/com~apple~CloudDocs/GandalfApp/GandalfApp/SecondViewController.m"
-                  timestampString = "524337646.497566"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "396">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__Block_byref_object_copy_"
-                  moduleName = "GandalfApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathan/Library/Mobile%20Documents/com~apple~CloudDocs/GandalfApp/GandalfApp/SecondViewController.m"
-                  timestampString = "524337646.499259"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__Block_byref_object_dispose_"
-                  moduleName = "GandalfApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathan/Library/Mobile%20Documents/com~apple~CloudDocs/GandalfApp/GandalfApp/SecondViewController.m"
-                  timestampString = "524337646.501092"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GandalfApp/SecondViewController.m"
-            timestampString = "524491418.346492"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "-updateButton:"
             landmarkType = "7">
          </BreakpointContent>
@@ -95,22 +32,6 @@
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GandalfApp/SecondViewController.m"
-            timestampString = "524491418.346492"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
-            landmarkName = "-updateButton:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

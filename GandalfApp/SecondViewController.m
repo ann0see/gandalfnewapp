@@ -108,16 +108,16 @@
 
     }
     
-    NSString *onlineVersion; //Version from Packages file + online repo
+ //Version from Packages file + online repo
     
-    //get the installed version and bundle identifier from the file located in /etc/gandalf/properties
+    //get the installed version and bundle identifier from the file located in /etc/gandalf/properties.plist
       // Check if file exists
     NSFileManager *fileManagerCheckProp = [NSFileManager defaultManager];
-    if (![fileManagerCheckProp isReadableFileAtPath:@"/etc/gandalf/properties"]){
-        NSLog(@"ERROR: /etc/gandalf/properties is not readable or does not exist.");
+    if (![fileManagerCheckProp isReadableFileAtPath:@"/etc/gandalf/properties.plist"]){
+        NSLog(@"ERROR: /etc/gandalf/properties.plist is not readable or does not exist.");
         
         UIAlertController* propertiesNoExistAlert = [UIAlertController alertControllerWithTitle:@"File doesn´t exist or not readable"
-                                                                       message:@"Couldn´t read file \"/etc/gandalf/properties\".\n Does this file exist, do you have removed Gandalf or is this app running in a sandbox?\nIf you think this is an error, please contact us."
+                                                                       message:@"Couldn´t read file \"/etc/gandalf/properties.plist\".\n Does this file exist, do you have removed Gandalf or is this app running in a sandbox?\nIf you think this is an error, please contact us."
                                                                 preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){}]; // Dismiss button
         UIAlertAction* contactAction = [UIAlertAction actionWithTitle:@"Contact" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
@@ -131,25 +131,17 @@
         [propertiesNoExistAlert addAction:defaultAction];
         [propertiesNoExistAlert addAction:contactAction];
         [self presentViewController:propertiesNoExistAlert animated:YES completion:nil];
-        return; // quit IBAction because we can´t get content of file /etc/gandalf/properties
+        return; // quit IBAction because we can´t get content of file /etc/gandalf/properties.plist
 
         
         
     }
+    NSDictionary *propertiesDict = [NSDictionary dictionaryWithContentsOfFile:@"/etc/gandalf/properties.plist"]; // save contents of properties plist into propertiesDict
     
-    NSString *propertiesFileContent = [NSString stringWithContentsOfFile:@"/etc/gandalf/properties" encoding:NSUTF8StringEncoding error:nil]; //Load content of this file into a string
-    NSArray *propertiesFileArray = [propertiesFileContent componentsSeparatedByString:@"\n"]; // and now into array so we can work with the lines of the file
+    NSString  *gandalfIdentifier = [propertiesDict objectForKey: @"BundleIdentifier"]; // get the bundleidentifier
+    NSString  *instVersion = [propertiesDict objectForKey: @"Version"]; // get the version
     
-    //////////////////////////////////////////////////////////////////////////////////////////
-    // IMPORTANT: THE FOLLOWING WILL FAIL IF YOU CHANGE THE FORMAT OF THE PROPERTIES FILE !!//
-    //////////////////////////////////////////////////////////////////////////////////////////
-    
-    NSString *gandalfIdentifier = [propertiesFileArray objectAtIndex:0]; //get the content of first line (at array index 0) and save it into gandalfIdentifier variable
-    NSString *instVersion = [propertiesFileArray objectAtIndex:1]; //get the content of the second line (at array index 1) and save it into instVersion variable
-    gandalfIdentifier = [gandalfIdentifier stringByReplacingOccurrencesOfString:@"BUNDLEID: " withString:@""]; // get rid of "BUNDLEID: "
-    NSLog(@"Identifier: %@", gandalfIdentifier); // output identifier to the log
-    instVersion = [instVersion stringByReplacingOccurrencesOfString:@"BUILD: " withString:@""];
-    NSLog(@"InstalledVersion: %@", instVersion); // output version number to the log
+
     __block NSString *packagesFile = @"//EMPTY/";
     
     // Get latest version from repository
@@ -188,7 +180,7 @@
     if (indexOfGandalfBundleIdentifier > [packagesFileArray count]) { // get here if index of bundleidentifier is greater than the actual array. this can happen if the bundleidentifier in the properties file is not found online.
         NSLog(@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Your properties file might be corrupted.");
         UIAlertController* indexToBigAlert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                                                                                                                                                            message:@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Are you online?lYour properties file might be corrupted. Please contact us, and check the content after \"BUNDLEID:\" in the file \"/etc/gandalf/properties\"\nDebug: \"indexOfBundleIdentifier > packagesFileArray count\""
+                                                                                                                                                                                                            message:@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Are you online? Your properties file might be corrupted. Please contact us, and check the content after \"BundleIdentifier\" in the file \"/etc/gandalf/properties.plist\"\nDebug: \"indexOfBundleIdentifier > packagesFileArray count\""
                                                                                                                                                                                                                  preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){}]; // Dismiss button
         UIAlertAction* contactAction = [UIAlertAction actionWithTitle:@"Contact" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
@@ -208,6 +200,7 @@
         return;
         
     }
+    NSString *onlineVersion; // declare OnlineVersion
     NSLog(@"Line: %lu", (unsigned long)indexOfGandalfBundleIdentifier); //output it to the log
     do {
         NSString *arrayLine = packagesFileArray[arrayCounter]; // Save content of array line...
