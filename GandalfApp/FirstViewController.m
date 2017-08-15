@@ -10,7 +10,6 @@
 #import "Reachability.h"
 
 @interface FirstViewController ()
-@property (weak, nonatomic) IBOutlet UIWebView *firstWebView;
 
 @end
 
@@ -22,14 +21,18 @@
     if ([[Reachability reachabilityForInternetConnection]currentReachabilityStatus]==NotReachable) /*Check if offline*/
     {
         //connection unavailable
+        
         _firstWebView.hidden = YES; // hide webview
-        _offlineLabel.hidden = NO; // show offline label
+        _offlineTitle.hidden = NO; // show offline title
+        _offlineText.hidden = NO; // show offline text
+
         NSLog(@"Offline...");
     }
     else
     {
         //connection available
-        _offlineLabel.hidden = YES; // hide offline label
+        _offlineTitle.hidden = YES; // hide offline title
+        _offlineText.hidden = YES; // hide offline text
         NSLog(@"Online");
         NSString *urlString = @"https://ethanrdoesmc.github.io/gandalf";
         NSURL *url = [NSURL URLWithString:urlString];

@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-// #import <WebKit/WebKit.h>
+
 
 @interface FirstViewController : UIViewController
-//@property (weak, nonatomic) IBOutlet UIWebView *firstWebView;
-@property (weak, nonatomic) IBOutlet UILabel *offlineLabel;
+@property (weak, nonatomic) IBOutlet UILabel *offlineTitle;
+@property (weak, nonatomic) IBOutlet UILabel *offlineText;
+@property (weak, nonatomic) IBOutlet UIWebView *firstWebView;
+
 
 
 @end

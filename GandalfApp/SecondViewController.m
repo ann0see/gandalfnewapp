@@ -92,6 +92,25 @@
 }
 // Check 4 updates
 - (IBAction)updateButton:(id)sender {
+    
+    // Check if we are offline
+    
+    if ([[Reachability reachabilityForInternetConnection]currentReachabilityStatus]== NotReachable)
+    {
+        //connection unavailable
+        NSLog(@"Offline...");
+        UIAlertController* offlineAlert = [UIAlertController alertControllerWithTitle:@"Device is offline"
+                                                                                        message:@"Your seems to be offline. Do you want to continue?"
+                                                                                 preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Continue" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){NSLog(@"Continued offline");}]; // Dismiss button
+        UIAlertAction* noContinueAction = [UIAlertAction actionWithTitle:@"Don´t continue" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){return;}]; // Dismiss button
+
+        [offlineAlert addAction:defaultAction];
+        [offlineAlert addAction:noContinueAction];
+        [self presentViewController:offlineAlert animated:YES completion:nil];
+
+    }
+
     NSString *onlineVersion; //Version from Packages file + online repo
     
     //get the installed version and bundle identifier from the file located in /etc/gandalf/properties
