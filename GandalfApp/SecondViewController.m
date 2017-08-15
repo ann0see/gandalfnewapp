@@ -94,23 +94,20 @@
 - (IBAction)updateButton:(id)sender {
     
     // Check if we are offline
-    
+
     if ([[Reachability reachabilityForInternetConnection]currentReachabilityStatus]== NotReachable)
     {
         //connection unavailable
         NSLog(@"Offline...");
-        UIAlertController* offlineAlert = [UIAlertController alertControllerWithTitle:@"Device is offline"
-                                                                                        message:@"Your seems to be offline. Do you want to continue?"
-                                                                                 preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Continue" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){NSLog(@"Continued offline");}]; // Dismiss button
-        UIAlertAction* noContinueAction = [UIAlertAction actionWithTitle:@"Don´t continue" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){return;}]; // Dismiss button
-
-        [offlineAlert addAction:defaultAction];
-        [offlineAlert addAction:noContinueAction];
-        [self presentViewController:offlineAlert animated:YES completion:nil];
+        NSString *deviceType =  [UIDevice currentDevice].model; // get type of device (e.g. iPhone, iPad, iPod)
+        NSString *alertMessage = [NSString stringWithFormat:@"Your %@ seems to be offline.", deviceType]; // merge it
+        UIButton *button = (UIButton *)sender;
+        button.enabled = NO;
+        [button setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+        [button setTitle:alertMessage forState:UIControlStateNormal];
 
     }
-
+    
     NSString *onlineVersion; //Version from Packages file + online repo
     
     //get the installed version and bundle identifier from the file located in /etc/gandalf/properties
@@ -170,12 +167,16 @@
           packagesFile = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
       }] resume];
      //Prevent infinite loops...
-
-    for (long double Timeout = 0; Timeout < 9999999999999999; Timeout++) {
+    long long int Timeout = 0;
+    while (TRUE) {
         if (![packagesFile isEqualToString:@"//EMPTY/"]) {
             break;
-        
         }
+        if (Timeout > 9999999999999999) {
+            NSLog(@"Probably hanging.");
+            break;
+        }
+        Timeout++;
     } // wait till block is finished
     NSLog(@"Content DL:\n%@", packagesFile);
     NSArray *packagesFileArray = [packagesFile componentsSeparatedByString:@"\n"]; // Save it in an array
@@ -187,7 +188,7 @@
     if (indexOfGandalfBundleIdentifier > [packagesFileArray count]) { // get here if index of bundleidentifier is greater than the actual array. this can happen if the bundleidentifier in the properties file is not found online.
         NSLog(@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Your properties file might be corrupted.");
         UIAlertController* indexToBigAlert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                                                                                                                                                            message:@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Your properties file might be corrupted. Please contact us, and check the content after \"BUNDLEID:\" in the file \"/etc/gandalf/properties\"\nDebug: \"indexOfBundleIdentifier > packagesFileArray count\""
+                                                                                                                                                                                                            message:@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Are you online?lYour properties file might be corrupted. Please contact us, and check the content after \"BUNDLEID:\" in the file \"/etc/gandalf/properties\"\nDebug: \"indexOfBundleIdentifier > packagesFileArray count\""
                                                                                                                                                                                                                  preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){}]; // Dismiss button
         UIAlertAction* contactAction = [UIAlertAction actionWithTitle:@"Contact" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
