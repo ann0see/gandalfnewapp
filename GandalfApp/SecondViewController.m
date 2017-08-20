@@ -7,7 +7,6 @@
 //
 
 #import "SecondViewController.h"
-#import "Reachability.h"
 @interface SecondViewController ()
 
 
@@ -93,20 +92,24 @@
 // Check 4 updates
 - (IBAction)updateButton:(id)sender {
     
-    // Check if we are offline
+    // Check if we are offline (the dirty way)
 
-    if ([[Reachability reachabilityForInternetConnection]currentReachabilityStatus]== NotReachable)
+    NSURL *dURL = [NSURL URLWithString:@"https://ethanrdoesmc.github.io/gandalf/app/online.txt"];
+    NSData *data = [NSData dataWithContentsOfURL:dURL];
+    if (! data)
     {
         //connection unavailable
-        NSLog(@"Offline...");
+        NSLog(@"Offline: can´t contact repo");
         NSString *deviceType =  [UIDevice currentDevice].model; // get type of device (e.g. iPhone, iPad, iPod)
-        NSString *alertMessage = [NSString stringWithFormat:@"Your %@ seems to be offline.", deviceType]; // merge it
+        NSString *alertMessage = [NSString stringWithFormat:@"Your %@ can´t connect to the repo.", deviceType]; // merge it
         UIButton *button = (UIButton *)sender;
         button.enabled = NO;
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
         [button setTitle:alertMessage forState:UIControlStateNormal];
-
+        
     }
+
+    
     
  //Version from Packages file + online repo
     
@@ -180,7 +183,7 @@
     if (indexOfGandalfBundleIdentifier > [packagesFileArray count]) { // get here if index of bundleidentifier is greater than the actual array. this can happen if the bundleidentifier in the properties file is not found online.
         NSLog(@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Your properties file might be corrupted.");
         UIAlertController* indexToBigAlert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                                                                                                                                                            message:@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Are you online? Your properties file might be corrupted. Please contact us, and check the content after \"BundleIdentifier\" in the file \"/etc/gandalf/properties.plist\"\nDebug: \"indexOfBundleIdentifier > packagesFileArray count\""
+                                                                                                                                                                                                            message:@"Something went wrong. Maybe we couldn´t find your bundle identifier online? Your properties file might be corrupted or we couldn´t contact the repository. Please contact us, and check the content after \"BundleIdentifier\" in the file \"/etc/gandalf/properties.plist\"\nDebug: \"indexOfBundleIdentifier > packagesFileArray count\""
                                                                                                                                                                                                                  preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){}]; // Dismiss button
         UIAlertAction* contactAction = [UIAlertAction actionWithTitle:@"Contact" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)

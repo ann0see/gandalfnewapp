@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB0A7C1A1F417266002C74BD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A7C191F417266002C74BD /* Reachability.m */; };
 		ABED1BAF1F16607600E9F9AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BAE1F16607600E9F9AC /* main.m */; };
 		ABED1BB21F16607600E9F9AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BB11F16607600E9F9AC /* AppDelegate.m */; };
 		ABED1BB51F16607600E9F9AC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED1BB41F16607600E9F9AC /* FirstViewController.m */; };
@@ -37,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AB0A7C161F417070002C74BD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		AB0A7C191F417266002C74BD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		ABED1BAA1F16607600E9F9AC /* GandalfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GandalfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABED1BAE1F16607600E9F9AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABED1BB01F16607600E9F9AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,8 +103,6 @@
 		ABED1BAC1F16607600E9F9AC /* GandalfApp */ = {
 			isa = PBXGroup;
 			children = (
-				AB0A7C161F417070002C74BD /* Reachability.h */,
-				AB0A7C191F417266002C74BD /* Reachability.m */,
 				ABED1BB01F16607600E9F9AC /* AppDelegate.h */,
 				ABED1BB11F16607600E9F9AC /* AppDelegate.m */,
 				ABED1BB31F16607600E9F9AC /* FirstViewController.h */,
@@ -295,7 +290,6 @@
 				ABED1BB21F16607600E9F9AC /* AppDelegate.m in Sources */,
 				ABED1BB51F16607600E9F9AC /* FirstViewController.m in Sources */,
 				ABED1BAF1F16607600E9F9AC /* main.m in Sources */,
-				AB0A7C1A1F417266002C74BD /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

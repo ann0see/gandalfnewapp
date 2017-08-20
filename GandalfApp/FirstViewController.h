@@ -10,11 +10,8 @@
 
 
 @interface FirstViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UILabel *offlineTitle;
 @property (weak, nonatomic) IBOutlet UILabel *offlineText;
 @property (weak, nonatomic) IBOutlet UIWebView *firstWebView;
-
-
-
 @end
-

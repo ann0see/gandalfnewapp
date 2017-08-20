@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-#import "Reachability.h"
+
 
 @interface FirstViewController ()
 
@@ -15,31 +15,31 @@
 
 @implementation FirstViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // check if we can connect to our repo
+    NSURL *dURL = [NSURL URLWithString:@"https://ethanrdoesmc.github.io/gandalf/app/online.txt"];
+    NSData *data = [NSData dataWithContentsOfURL:dURL];
+    if (data){
+        _offlineTitle.hidden = YES; // hide offline title
+        _offlineText.hidden = YES; // hide offline text
+        NSLog(@"Online: can contact repo");
+        NSString *urlString = @"https://ethanrdoesmc.github.io/gandalf/app/firstview.html";
+        NSURL *url = [NSURL URLWithString:urlString];
+        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+        
+        [_firstWebView loadRequest:urlRequest];
 
-    if ([[Reachability reachabilityForInternetConnection]currentReachabilityStatus]==NotReachable) //Check if offline
-    {
-        //connection unavailable
+    }
+    else {
+        NSLog(@"Offline: can´t contact repo");
         
         _firstWebView.hidden = YES; // hide webview
         _offlineTitle.hidden = NO; // show offline title
         _offlineText.hidden = NO; // show offline text
-
-        NSLog(@"Offline...");
+        
     }
-    else
-    {
-        //connection available
-        _offlineTitle.hidden = YES; // hide offline title
-        _offlineText.hidden = YES; // hide offline text
-        NSLog(@"Online");
-        NSString *urlString = @"https://ethanrdoesmc.github.io/gandalf/app/firstview.html";
-        NSURL *url = [NSURL URLWithString:urlString];
-        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-        [_firstWebView loadRequest:urlRequest];
-    }
-   
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -48,6 +48,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
