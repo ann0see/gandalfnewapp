@@ -2,7 +2,7 @@
 //  GandalfAppUITests.m
 //  GandalfAppUITests
 //
-//  Created by ***REMOVED*** on 12.07.17.
+//  Created by Jonathan ***REMOVED*** on 12.07.17.
 //  Copyright © 2017 Gandalf. All rights reserved.
 //
 
