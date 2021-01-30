@@ -1,4 +1,7 @@
 # An app for Gandalf
+
+This app is now abandoned (January 2021). Gandalf can be replaced by TweakCompatible or similar.
+
 Mainly to pin the Gandalf Debian Package (at least that was the original thought why this app was created.)
 More information on Gandalf can be found here: https://github.com/EthanRDoesMC/gandalf
 ## !Experiment!
